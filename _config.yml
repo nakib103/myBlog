@@ -23,8 +23,6 @@ author: "Syed Nakib Hossain"
 email: syedhossain103@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   My blog for my computer science journey. Also serve as my notebook.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  nakib103
 
 # Build settings
