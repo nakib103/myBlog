@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Creating a bloggin website with jekyll"
+title:  "Creating a Blogging Website with Jekyll"
 date:   2023-04-07 17:55:52 +0100
 categories: jekyll update
 ---
