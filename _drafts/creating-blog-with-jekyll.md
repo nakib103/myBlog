@@ -100,7 +100,7 @@ You might be wondering what is the content between the two `---`. These are call
 `title: Contact Me` : This tells Jekyll to put "Contact Me" as the page title.
 `permalink: /contact_me/` : This tells Jekyll how to format the url for this page. Look at the address above, it is - `http://127.0.0.1:4001/contact_me/`
 
-When you have a of page like this you might want to create sub-directories to manage all the files. You can easily do this and Jekyll will still process them as before. For example create a directory `myBlog/topbar/` and put the `about.markdown` and `contact_me.markdown` under it and try building the site again. It will work same as before. 
+When you have a of page like this you might want to create sub-directories to manage all the files. You can easily do this and Jekyll will still process them as before. For example create a directory `myBlog/topbar/` and put the `contact_me.markdown` under it and try building the site again. It will work same as before. 
 
 But note that, Jekyll do not process files or directories that starts with the following characters -
 - `_`
@@ -119,6 +119,23 @@ Try building the site again - it will work the same way as before.
 
 
 ## Adding a Post to the Site
+As mentioned previously blog is similar to pages but tied to a specific date. On the home page you will see a link of a post with title "Welcome to Jekyll" with date at top which is the day the post published. This page was created when we ran the `jekyll new` command.
+
+If we want to create a new post we can just add a markdown or HTML under `_posts` directory. The name has to be of format `YYYY-MM-DD-<post-title>.markdown`. For example add a page named `2023-04-09-a-new-post.markdown` with the following content under `_posts` directory -
+
+{% highlight markdown %}
+---
+layout: post
+title: "A New Post"
+categories: jekyll update
+---
+
+This is a new post!
+{% endhighlight %}
+
+Build the site again and you will see the new post under the previous one -
+
+![new post]({{site.url}}/_assets/new_post.JPG)
 
 ## Some Jekyll Basics
 
