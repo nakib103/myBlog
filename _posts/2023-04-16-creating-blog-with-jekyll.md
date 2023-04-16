@@ -3,7 +3,6 @@ layout: post
 title:  "Creating a Blogging Website with Jekyll"
 categories: jekyll update
 ---
-
 Jekyll is a powerful tool that can create a static website based on the content you write in some markdown or html text. It also provide useful utilities to create blogs. This blog, for one, is powered by Jekyll and I am going to talk about how you can make one too.
 
 ## Set-up and Create an Initial Site
@@ -74,7 +73,7 @@ bundle exec jekyll serve
 
 Jekyll will first build your site and put all the generated file for the site under `_site` directory. It will then create a server that will serve the site locally in `http://127.0.0.1:4000` address. Open up a browser and go to this address and you will be able to see the following page - 
 
-![first webpage]({{ site.url }}/_assets/first_webpage.JPG)
+![first webpage]({{ site.url }}/assets/first_webpage.JPG)
 
 Done! you got your first website!
 
@@ -100,7 +99,7 @@ If interested sent me an email at - `johndoe@exmaple.com`
 
 Put the file in the root dir under `myBlog/` and reload the webapge (`http://127.0.0.1:4000`). You will see a new link for this new page in the top bar. Clicking the link will open up the following page - 
 
-![contact me]({{ site.url }}/_assets/contact_me.JPG)
+![contact me]({{ site.url }}/assets/contact_me.JPG)
 
 You might be wondering what is the content between the two `---`. These are called "Front Matter" and contain important metadata information that is used by Jekyll when building a page. Here -
 
@@ -145,7 +144,7 @@ This is a new post!
 
 Build the site again and you will see the new post under the previous one -
 
-![new post]({{site.url}}/_assets/new_post.JPG)
+![new post]({{site.url}}/assets/new_post.JPG)
 
 ## Some Jekyll Basics
 
