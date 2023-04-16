@@ -99,7 +99,7 @@ If interested sent me an email at - `johndoe@exmaple.com`
 
 Put the file in the root dir under `myBlog/` and reload the webapge (`http://127.0.0.1:4000`). You will see a new link for this new page in the top bar. Clicking the link will open up the following page - 
 
-![contact me](/{{ site.baseurl }}/_images/contact_me.JPG)
+![contact me]({{ site.baseurl }}/_images/contact_me.JPG)
 
 You might be wondering what is the content between the two `---`. These are called "Front Matter" and contain important metadata information that is used by Jekyll when building a page. Here -
 
@@ -144,7 +144,7 @@ This is a new post!
 
 Build the site again and you will see the new post under the previous one -
 
-![new post](/{{ site.baseurl }}/_images/new_post.JPG)
+![new post]({{ site.baseurl }}/_images/new_post.JPG)
 
 ## Some Jekyll Basics
 
