@@ -2,9 +2,12 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {%- include head.html -%}
+  {%- include google_analytics.html -%}
+  {%- include gtag_head.html -%}
 
   <body>
 
+    {%- include gtag_body.html -%}
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
