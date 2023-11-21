@@ -52,7 +52,6 @@ li {
 */
 
 header {
-  background: $cod-grey;
   width: 100%;
   border-bottom: 1px dashed $conifer; //header;
   padding: 20px 0;
@@ -169,11 +168,10 @@ pre {
 }
 
 code.highlighter-rouge {
-  background: rgba(0,0,0,0.9);
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 0px 3px;
   margin: 0px -3px;
-  color: #aa759f;
+  color: #ec1111;
   border-radius: 2px;
 }
 
