@@ -19,7 +19,17 @@
     <header>
       <div class="container">
         <a id="a-title" href="{{ '/' | relative_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          {% assign author_names = site.author | default: site.github.repository_owner | split: " " %}
+          {% assign username = "" %}
+          {% for author_name in author_names %}
+            {% if forloop.last == false %}
+              {% assign initial = author_name | truncate: 1, "" %}
+              {% assign username = username | append: initial %}
+            {% else %}
+              {% assign username = username | append: author_name %}
+            {% endif %}
+          {% endfor %}
+          <h1>{{ username | downcase }}@{{ site.title | default: site.github.repository_name }}</h1>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
