@@ -74,9 +74,7 @@ header h1 {
   }
 }
 
-
 header h1:before {
-  // content: "./ ";
   font-size: 24px;
 }
 
@@ -84,6 +82,10 @@ header h2 {
   font-size: 18px;
   font-weight: 300;
   color: #666;
+}
+
+header h2:before {
+  content: "-D --description\a0\a0";
 }
 
 #downloads .btn {
@@ -141,10 +143,6 @@ h1, h2, h3, h4, h5, h6 {
 dt {
   font-style: italic;
   font-weight: bold;
-}
-
-ul li {
-  list-style-image:url('../images/bullet.png');
 }
 
 blockquote {
