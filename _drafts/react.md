@@ -45,7 +45,7 @@ We use `{}` to write JavaScript inside JSX.
 #### Styling JSX component
 - external CSS: use className instead of class to add a class to JSX element. Because React actually use javascript className DOM api to do this.
 - inline CSS: we need to provide a JavaScript object instead of a string which we used to do in HTML. This calls for some changes from CSS syntax - 
-  - as JavaScript object is wrapped around `{}` which is also used to escape from JSX to JavaScript. Therefore we will be needing `{{}}` to pass CSS style object for styling JSX elements. 
+  - as JavaScript object is wrapped around `{}` which is also used to escape from JSX to JavaScript. Therefore we will be needing `\{\{\}\}` to pass CSS style object for styling JSX elements. 
   - we cannot use `-` inside JavaScript, therefore for JSX styling we can omit the `-` and make the word camelCase.
 - Styled Components - 
 
