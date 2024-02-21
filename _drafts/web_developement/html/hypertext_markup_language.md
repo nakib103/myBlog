@@ -5,13 +5,37 @@ category: jekyll update
 ---
 
 ## What is HTML
-HTML is a markup language for websites. It is not case-sensitive.
+HTML is a markup language for websites. Markup languages are a type of text-encoding system that tells the structure and formatting of a document. Web browser can parse these documents and render accordingly. It is a hypertext because it can caontains hyperlinks that references to other text and media such as images, audio, and video. 
 
-### Execution Process
+- <b>file extension:</b> .html or .htm
+- <b>case-sensitive:</b> no
 
-HTML page is parsed sequentially from beginning to end. As resources are encountered like image and stylesheets browser executes parallel request for them. But if script tag is found they are loaded and executed first before proceeding. Exception is script tag with attribute `defer` or `sync`. Browser may however sometimes look-ahead and request another script tag execution in parallel with current script tag running.
+## Basics
 
-## Page Structure
+HTML document consists of elements which makes different parts of the rendered web page. Each element have a start tag and end tag with the content of the element confined within these two tags. Each element can also have different attributes which provides additional information about the element.
+
+### Elements
+
+HTML element consists of -
+- start tag -
+- content - 
+- end tag - 
+
+For example, look at a paragraph element - 
+![html element]({{ site.baseurl }}/_images/html_element.png)
+
+### Attributes
+
+An HTML attribute consists of -
+- name - 
+- value - enclosed by double quotation? multiple values separated by space? 
+
+<b>Attributes are always written in the start tag of an element.</b>
+
+For example, a paragraph element can have `style` attribute with value `color: red` to say render the text in red. 
+![html element]({{ site.baseurl }}/_images/html_attribute.png)
+
+### Docuement Structure
 {% highlight HTML %}
 <html>
 
@@ -21,6 +45,10 @@ HTML page is parsed sequentially from beginning to end. As resources are encount
 
 </html>
 {% endhighlight %}
+
+### Execution Process
+
+HTML page is parsed sequentially from beginning to end. As resources are encountered like image and stylesheets browser executes parallel request for them. But if script tag is found they are loaded and executed first before proceeding. Exception is script tag with attribute `defer` or `sync`. Browser may however sometimes look-ahead and request another script tag execution in parallel with current script tag running.
 
 ## Elements and Attributes
 
